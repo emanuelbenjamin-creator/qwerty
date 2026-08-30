@@ -1,0 +1,7 @@
+{
+  "name": "Heridas que se convirtieron en alas - Ricardo Madrid Mendoza",
+  "description": "Landing page oficial del libro 'Heridas que se convirtieron en alas' por Ricardo Madrid Mendoza. Transforma tus cicatrices en tu mayor fortaleza.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
