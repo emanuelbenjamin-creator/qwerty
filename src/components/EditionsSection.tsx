@@ -1,15 +1,15 @@
 import React from 'react';
 import { EDITIONS } from '../data/bookData';
-import { Check, Sparkles, Zap, Book, Headphones } from 'lucide-react';
+import { Check, Zap, Book } from 'lucide-react';
 
 interface EditionsSectionProps {
-  onSelectEdition: (editionId: 'digital' | 'print' | 'audio') => void;
+  onSelectEdition?: (editionId?: string) => void;
 }
 
-export const EditionsSection: React.FC<EditionsSectionProps> = ({ onSelectEdition }) => {
+export const EditionsSection: React.FC<EditionsSectionProps> = () => {
   return (
-    <section id="formatos" className="py-20 sm:py-28 px-6 sm:px-8 max-w-[1200px] mx-auto">
-      <div className="text-center mb-16 max-w-3xl mx-auto">
+    <section id="formatos" className="py-20 sm:py-28 px-6 sm:px-8 max-w-[1000px] mx-auto">
+      <div className="text-center mb-16 max-w-2xl mx-auto">
         <span className="font-mono-label text-xs sm:text-sm text-[#b41a2e] font-semibold uppercase tracking-widest mb-3 block">
           Formatos Disponibles
         </span>
@@ -21,17 +21,16 @@ export const EditionsSection: React.FC<EditionsSectionProps> = ({ onSelectEditio
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-3xl mx-auto">
         {EDITIONS.map((edition) => {
           const isPrint = edition.id === 'print';
-          const isAudio = edition.id === 'audio';
 
           return (
             <div
               key={edition.id}
               className={`rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 relative ${
                 isPrint
-                  ? 'bg-white border-2 border-[#FA505A] shadow-xl shadow-[#FA505A]/10 scale-[1.02] z-10'
+                  ? 'bg-white border-2 border-[#FA505A] shadow-xl shadow-[#FA505A]/10 md:scale-[1.02] z-10'
                   : 'bg-white border border-[#ECE5F9] card-shadow hover:border-[#ffd9e2]'
               }`}
             >
@@ -52,7 +51,6 @@ export const EditionsSection: React.FC<EditionsSectionProps> = ({ onSelectEditio
                 <div className="flex items-center gap-2 mb-3">
                   {edition.id === 'digital' && <Zap className="w-5 h-5 text-[#FA505A]" />}
                   {edition.id === 'print' && <Book className="w-5 h-5 text-[#FA505A]" />}
-                  {edition.id === 'audio' && <Headphones className="w-5 h-5 text-[#FA505A]" />}
                   <h3 className="text-xl sm:text-2xl font-bold text-[#1a1c1c]">
                     {edition.name}
                   </h3>
@@ -92,7 +90,7 @@ export const EditionsSection: React.FC<EditionsSectionProps> = ({ onSelectEditio
               </div>
 
               <button
-                onClick={() => onSelectEdition(edition.id as 'digital' | 'print' | 'audio')}
+                type="button"
                 className={`w-full py-4 rounded-full font-bold text-base transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer ${
                   isPrint
                     ? 'bg-[#FA505A] hover:bg-[#d73644] text-white shadow-md shadow-[#FA505A]/20'

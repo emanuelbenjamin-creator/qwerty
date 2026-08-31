@@ -3,7 +3,7 @@ import { IMAGES } from '../data/bookData';
 import { BookOpen, Sparkles, ShieldCheck, ArrowRight } from 'lucide-react';
 
 interface HeroSectionProps {
-  onSelectEdition: (editionId: 'digital' | 'print' | 'audio') => void;
+  onSelectEdition: (editionId?: string) => void;
   onOpenReader: () => void;
 }
 

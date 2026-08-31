@@ -40,22 +40,6 @@ export const EDITIONS: BookEdition[] = [
       'Garantía de satisfacción de 30 días'
     ],
     ctaText: 'Pedir Copia Impresa'
-  },
-  {
-    id: 'audio',
-    name: 'Audiolibro',
-    subtitle: 'Narrado con la voz del propio Ricardo Madrid',
-    price: '$14.99 USD',
-    originalPrice: '$19.99 USD',
-    badge: 'Experiencia Inmersiva',
-    description: 'Más de 7 horas de narración íntima y reflexiones exclusivas para acompañar tus viajes, caminatas y momentos de calma.',
-    features: [
-      'Audio en alta fidelidad (MP3 / M4B)',
-      'Capítulos divididos y notas sonoras del autor',
-      'Escucha offline desde cualquier reproductor',
-      'Acceso de por vida a futuras actualizaciones de audio'
-    ],
-    ctaText: 'Obtener Audiolibro'
   }
 ];
 

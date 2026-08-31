@@ -60,7 +60,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
                 <strong>1. Propiedad Intelectual:</strong> Todos los textos, imágenes, audios y diseños presentados en esta plataforma son propiedad exclusiva de Ricardo Madrid Mendoza y se encuentran protegidos por las leyes de derecho de autor internacionales.
               </p>
               <p>
-                <strong>2. Licencia de Uso Digital:</strong> La adquisición de la versión digital (eBook o Audiolibro) otorga una licencia personal, intransferible y no exclusiva para uso individual. Queda terminantemente prohibida la redistribución, copia no autorizada o comercialización secundaria de los archivos.
+                <strong>2. Licencia de Uso Digital:</strong> La adquisición de la versión digital (eBook) otorga una licencia personal, intransferible y no exclusiva para uso individual. Queda terminantemente prohibida la redistribución, copia no autorizada o comercialización secundaria de los archivos.
               </p>
               <p>
                 <strong>3. Devoluciones:</strong> Ofrecemos una garantía incondicional de satisfacción de 30 días naturales.

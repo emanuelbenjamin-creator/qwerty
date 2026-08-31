@@ -9,26 +9,25 @@ import { EditionsSection } from './components/EditionsSection';
 import { FaqSection } from './components/FaqSection';
 import { FinalCtaSection } from './components/FinalCtaSection';
 import { Footer } from './components/Footer';
-import { PurchaseModal } from './components/Modals/PurchaseModal';
 import { BookPreviewModal } from './components/Modals/BookPreviewModal';
 import { InfoModal } from './components/Modals/InfoModal';
 
 export default function App() {
-  const [purchaseModalOpen, setPurchaseModalOpen] = useState(false);
-  const [selectedEdition, setSelectedEdition] = useState<'digital' | 'print' | 'audio'>('digital');
   const [readerModalOpen, setReaderModalOpen] = useState(false);
   const [infoModalType, setInfoModalType] = useState<'privacy' | 'terms' | 'contact' | 'press' | null>(null);
 
-  const handleOpenPurchase = (edition: 'digital' | 'print' | 'audio' = 'digital') => {
-    setSelectedEdition(edition);
-    setPurchaseModalOpen(true);
+  const handleScrollToFormats = () => {
+    const el = document.getElementById('formatos');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
     <div className="min-h-screen bg-[#f9f9f9] text-[#1a1c1c] font-sans antialiased selection:bg-[#ffd9e2] selection:text-[#410008] flex flex-col">
       {/* Top Sticky Navigation */}
       <Navbar
-        onOpenPurchase={() => handleOpenPurchase('digital')}
+        onOpenPurchase={handleScrollToFormats}
         onOpenReader={() => setReaderModalOpen(true)}
       />
 
@@ -36,7 +35,7 @@ export default function App() {
       <main className="flex-grow">
         {/* Hero Section */}
         <HeroSection
-          onSelectEdition={(edition) => handleOpenPurchase(edition)}
+          onSelectEdition={handleScrollToFormats}
           onOpenReader={() => setReaderModalOpen(true)}
         />
 
@@ -53,32 +52,25 @@ export default function App() {
         <TestimonialsSection />
 
         {/* Book Editions & Formats */}
-        <EditionsSection onSelectEdition={(edition) => handleOpenPurchase(edition)} />
+        <EditionsSection onSelectEdition={handleScrollToFormats} />
 
         {/* Frequently Asked Questions */}
         <FaqSection />
 
         {/* Final Conversion CTA */}
-        <FinalCtaSection onOpenPurchase={() => handleOpenPurchase('digital')} />
+        <FinalCtaSection onOpenPurchase={handleScrollToFormats} />
       </main>
 
       {/* Footer */}
       <Footer onOpenInfo={(type) => setInfoModalType(type)} />
 
-      {/* Interactive Modals */}
-      {purchaseModalOpen && (
-        <PurchaseModal
-          initialEdition={selectedEdition}
-          onClose={() => setPurchaseModalOpen(false)}
-        />
-      )}
-
+      {/* Reader Sample Modal */}
       {readerModalOpen && (
         <BookPreviewModal
           onClose={() => setReaderModalOpen(false)}
           onOpenPurchase={() => {
             setReaderModalOpen(false);
-            handleOpenPurchase('digital');
+            handleScrollToFormats();
           }}
         />
       )}

@@ -41,7 +41,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenPurchase
 
       <p className="mt-6 text-sm text-[#5a4040] font-medium flex items-center justify-center gap-2">
         <Sparkles className="w-4 h-4 text-[#FA505A]" />
-        <span>Disponible en formato Físico, Digital y Audiolibro.</span>
+        <span>Disponible en formato Físico y Digital.</span>
       </p>
     </section>
   );

@@ -1,5 +1,5 @@
 export interface BookEdition {
-  id: 'digital' | 'print' | 'audio' | 'bundle';
+  id: 'digital' | 'print' | 'bundle';
   name: string;
   subtitle: string;
   price: string;
@@ -26,4 +26,4 @@ export interface FaqItem {
   answer: string;
 }
 
-export type ModalType = 'digital-checkout' | 'print-checkout' | 'audio-checkout' | 'sample-reader' | 'privacy' | 'terms' | 'contact' | 'press' | null;
+export type ModalType = 'digital-checkout' | 'print-checkout' | 'sample-reader' | 'privacy' | 'terms' | 'contact' | 'press' | null;

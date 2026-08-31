@@ -94,7 +94,7 @@ export const BookPreviewModal: React.FC<BookPreviewModalProps> = ({ onClose, onO
                 Continúa este viaje de sanación y libertad
               </h3>
               <p className="text-sm text-gray-600 mb-6 max-w-md mx-auto">
-                Adquiere el libro completo en formato Digital, Impreso o Audiolibro y accede a todos los capítulos y guías de ejercicio.
+                Adquiere el libro completo en formato Digital o Impreso y accede a todos los capítulos y guías de ejercicio.
               </p>
               <button
                 onClick={() => {
