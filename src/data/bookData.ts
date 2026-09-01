@@ -92,7 +92,7 @@ export const FAQS: FaqItem[] = [
   {
     id: '4',
     question: '¿Qué incluye la garantía de satisfacción?',
-    answer: 'Confiamos plenamente en el impacto transformador de este libro. Si durante los primeros 30 días sientes que el contenido no cumplió tus expectativas, puedes solicitar el reembolso del 100% de tu dinero sin preguntas incómodas.'
+    answer: 'Creemos en el poder de esta historia para inspirar y transformar. Por eso hemos cuidado cada detalle para ofrecerte una experiencia de lectura especial, con una edición preparada con dedicación y un proceso de compra claro y seguro. Nuestro mayor deseo es que este libro llegue a tus manos y se convierta en una fuente de esperanza, reflexión y fortaleza.'
   }
 ];
 

@@ -49,7 +49,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
                 En cumplimiento con las normativas internacionales de protección de datos personales (RGPD y normativas locales), te informamos que los datos recopilados (nombre, correo electrónico y dirección para envíos físicos) son utilizados estrictamente para procesar tus compras, enviar actualizaciones sobre tu pedido y remitir información de interés si así lo has autorizado.
               </p>
               <p>
-                No vendemos ni compartimos tu información personal con terceros para fines publicitarios ajenos a la obra de Ricardo Madrid Mendoza. Puedes solicitar la rectificación o eliminación de tus datos en cualquier momento escribiendo a <strong>contacto@ricardomadridmendoza.com</strong>.
+                No vendemos ni compartimos tu información personal con terceros para fines publicitarios ajenos a la obra de Ricardo Madrid Mendoza. Puedes solicitar la rectificación o eliminación de tus datos en cualquier momento escribiendo a <strong>ricardoommendoza@gmail.com</strong>.
               </p>
             </>
           )}
@@ -76,15 +76,11 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
               <div className="bg-[#F7F0F2] p-4 rounded-2xl space-y-3">
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-[#b41a2e]" />
-                  <span className="font-semibold text-[#1a1c1c]">contacto@ricardomadridmendoza.com</span>
+                  <span className="font-semibold text-[#1a1c1c]">ricardoommendoza@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#b41a2e]" />
-                  <span>+1 (800) 427-4327 (Atención Lunes a Viernes)</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4 text-[#b41a2e]" />
-                  <span>Editorial Lumina • Distribución Global</span>
+                  <span>+51 969864448</span>
                 </div>
               </div>
             </div>
@@ -95,9 +91,15 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
               <p>
                 Para solicitudes de entrevistas, notas de prensa, ponencias en eventos corporativos y material gráfico en alta resolución para medios impresos y digitales:
               </p>
-              <div className="bg-[#F7F0F2] p-4 rounded-2xl">
-                <div className="font-bold text-[#1a1c1c] mb-1">Dpto. de Prensa y Relaciones Públicas</div>
-                <div className="text-[#b41a2e] font-semibold">prensa@ricardomadridmendoza.com</div>
+              <div className="bg-[#F7F0F2] p-4 rounded-2xl space-y-3">
+                <div className="flex items-center gap-3">
+                  <Mail className="w-4 h-4 text-[#b41a2e]" />
+                  <span className="font-semibold text-[#1a1c1c]">ricardoommendoza@gmail.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-4 h-4 text-[#b41a2e]" />
+                  <span>+51 969864448</span>
+                </div>
                 <div className="text-xs text-gray-500 mt-2">Respuesta en menos de 24 horas hábiles.</div>
               </div>
             </div>
