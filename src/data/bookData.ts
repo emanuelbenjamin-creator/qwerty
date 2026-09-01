@@ -19,7 +19,6 @@ export const EDITIONS: BookEdition[] = [
     features: [
       'Descarga directa instantánea (sin esperas)',
       'Formatos PDF de alta calidad, EPUB y MOBI',
-      'Guía complementaria en PDF: "Cuaderno de Sanación"',
       'Lectura cómoda en modo claro y oscuro'
     ],
     ctaText: 'Comprar Versión Digital'
@@ -35,9 +34,8 @@ export const EDITIONS: BookEdition[] = [
     description: 'Edición en tapa blanda con acabado mate aterciopelado, papel libre de ácido de alto gramaje y marcapáginas exclusivo de regalo.',
     features: [
       'Envío a domicilio nacional e internacional',
-      'Incluye versión digital completa de regalo',
       'Marcapáginas conmemorativo de colección',
-      'Garantía de satisfacción de 30 días'
+      'Garantía de satisfacción'
     ],
     ctaText: 'Pedir Copia Impresa'
   }
@@ -46,27 +44,27 @@ export const EDITIONS: BookEdition[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
-    name: 'Carmen Ruiz',
-    role: 'Lectora verificada',
-    avatarLetter: 'C',
+    name: 'Hernando Aparicio',
+    role: 'Pastor de la Iglesia Casa de Vida · Autor de Semillas de fe · Trujillo, Perú',
+    avatarLetter: 'H',
     rating: 5,
-    text: '"Un libro que me confrontó y me abrazó al mismo tiempo. Me dio las herramientas precisas para dejar ir un dolor que llevaba cargando por años. Lectura obligatoria."'
+    text: '"Con una honestidad que conmueve y una fe que inspira, Ricardo Madrid nos recuerda que las heridas no tienen por qué definir nuestro destino. Cada capítulo transforma el dolor en esperanza y las cicatrices en testimonios de la gracia de Dios. Este libro no solo se lee; también confronta, fortalece e inspira a creer que, en las manos del Señor, aun las experiencias más difíciles pueden convertirse en alas para volver a volar."'
   },
   {
     id: '2',
-    name: 'Alejandro V.',
-    role: 'Lector verificado',
-    avatarLetter: 'A',
+    name: 'Ricardo Musse Carrasco',
+    role: 'Escritor',
+    avatarLetter: 'R',
     rating: 5,
-    text: '"Ricardo escribe con una claridad asombrosa. Sentí que alguien por fin entendía el proceso por el que estaba pasando. Las prácticas recomendadas realmente funcionan."'
+    text: '"El libro Heridas que se convirtieron en alas, de Ricardo Madrid Mendoza, constituye un testimonio del poder restaurador del espíritu humano. El autor vuelca experiencias íntimas para ofrendar un acompañamiento reconfortante y cercano. Su objetivo primordial radica en demostrar cómo la tribulación puede transformarse en una vía de redención. A lo largo de sus páginas, la obra resalta valores perpetuos como la fe inquebrantable, la resiliencia, el perdón y la empatía. Además, la lectura ofrece la inconmensurable enseñanza concerniente a que las heridas no determinan nuestro destino, sino que impulsan la humanizadora restauración."'
   },
   {
     id: '3',
-    name: 'María José L.',
-    role: 'Lectora verificada',
-    avatarLetter: 'M',
+    name: 'Helio Bohórquez',
+    role: 'Coach',
+    avatarLetter: 'H',
     rating: 5,
-    text: '"El título lo dice todo. Este no es un libro de autoayuda superficial, es un manual de supervivencia para el alma rota. Lo recomiendo a cualquiera en proceso de duelo."'
+    text: '"Me gusta el énfasis que hace el autor cuando se refiere a los principios, la fe y el propósito. Promueve la importancia del carácter con coherencia. Nos recuerda que el Éxito es cuesta arriba y debemos abrazarlo con valores para, a pesar de las circunstancias, convertirnos en persona, Liderando de manera intencional."'
   }
 ];
 

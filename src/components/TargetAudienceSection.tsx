@@ -35,7 +35,7 @@ export const TargetAudienceSection: React.FC = () => {
             ¿Para quién es este libro?
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1c1c] tracking-tight">
-            ¿Te sientes atrapado en el pasado?
+            Si la vida ha sido injusta contigo, tu historia aún no ha terminado
           </h2>
         </div>
 

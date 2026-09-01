@@ -58,7 +58,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectEdition, onOpe
 
             <div className="flex items-center gap-2 text-xs text-[#5a4040]">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Garantía de satisfacción de 30 días</span>
+              <span>Garantía de satisfacción</span>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectEdition, onOpe
             {/* Quick floating badge */}
             <div className="absolute -bottom-4 -left-2 sm:-left-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl border border-[#ECE5F9] shadow-md flex items-center gap-2.5">
               <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-xs font-semibold text-[#1a1c1c]">Edición 2024 Actualizada</span>
+              <span className="text-xs font-semibold text-[#1a1c1c]">Lanzamiento 2026</span>
             </div>
           </div>
         </div>
