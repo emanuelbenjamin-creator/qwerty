@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag, BookOpen } from 'lucide-react';
+import { LINKS } from '../data/bookData';
 
 interface NavbarProps {
   onOpenPurchase: () => void;
@@ -65,14 +66,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPurchase, onOpenReader }) 
 
         {/* Action Button & Mobile Toggle */}
         <div className="flex items-center gap-3">
-          <button
+          <a
             id="nav-buy-button"
-            onClick={onOpenPurchase}
+            href={LINKS.amazon}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#FA505A] hover:bg-[#d73644] text-white font-bold px-6 py-2.5 rounded-full text-sm sm:text-base transition-all duration-200 hover:scale-[1.02] shadow-sm flex items-center gap-2 cursor-pointer"
           >
             <ShoppingBag className="w-4 h-4 hidden sm:inline-block" />
             <span>Comprar</span>
-          </button>
+          </a>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -108,15 +111,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPurchase, onOpenReader }) 
               <BookOpen className="w-5 h-5" />
               <span>Leer fragmento gratis</span>
             </button>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenPurchase();
-              }}
+            <a
+              href={LINKS.amazon}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
               className="mt-2 w-full bg-[#FA505A] text-white font-bold py-3 rounded-full text-center hover:bg-[#d73644] transition-colors"
             >
               Comprar Ahora
-            </button>
+            </a>
           </div>
         </div>
       )}

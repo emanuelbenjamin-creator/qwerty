@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SAMPLE_CHAPTER } from '../../data/bookData';
+import { SAMPLE_CHAPTER, LINKS } from '../../data/bookData';
 import { X, BookOpen, ShoppingBag, Plus, Minus } from 'lucide-react';
 
 interface BookPreviewModalProps {
@@ -96,16 +96,16 @@ export const BookPreviewModal: React.FC<BookPreviewModalProps> = ({ onClose, onO
               <p className="text-sm text-gray-600 mb-6 max-w-md mx-auto">
                 Adquiere el libro completo en formato Digital o Impreso y accede a todos los capítulos y guías de ejercicio.
               </p>
-              <button
-                onClick={() => {
-                  onClose();
-                  onOpenPurchase();
-                }}
+              <a
+                href={LINKS.amazon}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onClose}
                 className="bg-[#FA505A] hover:bg-[#d73644] text-white font-bold px-8 py-3.5 rounded-full text-base transition-all duration-200 hover:scale-[1.02] shadow-md flex items-center justify-center gap-2 mx-auto cursor-pointer"
               >
                 <ShoppingBag className="w-5 h-5" />
                 <span>Adquirir el Libro Completo</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

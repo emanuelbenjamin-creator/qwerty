@@ -1,5 +1,5 @@
 import React from 'react';
-import { IMAGES } from '../data/bookData';
+import { IMAGES, LINKS } from '../data/bookData';
 import { BookOpen, Sparkles, ShieldCheck, ArrowRight } from 'lucide-react';
 
 interface HeroSectionProps {
@@ -28,21 +28,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectEdition, onOpe
 
           {/* Primary Action Buttons */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
-            <button
+            <a
               id="hero-buy-digital-btn"
-              onClick={() => onSelectEdition('digital')}
+              href={LINKS.amazon}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#FA505A] hover:bg-[#d73644] text-white font-bold px-8 py-4 rounded-full text-base sm:text-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-[#FA505A]/25 text-center cursor-pointer"
             >
               Consigue una copia digital
-            </button>
+            </a>
 
-            <button
+            <a
               id="hero-buy-print-btn"
-              onClick={() => onSelectEdition('print')}
+              href={LINKS.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-transparent hover:bg-[#F7F0F2] text-[#1a1c1c] border-2 border-[#2E101B] font-bold px-8 py-4 rounded-full text-base sm:text-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-center flex items-center justify-center gap-2 cursor-pointer"
             >
               Quiero una copia impresa
-            </button>
+            </a>
           </div>
 
           {/* Secondary Action: Read Free Chapter */}

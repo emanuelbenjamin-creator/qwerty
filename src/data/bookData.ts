@@ -1,5 +1,10 @@
 import { BookEdition, Testimonial, FaqItem } from '../types';
 
+export const LINKS = {
+  whatsapp: 'https://wa.me/51983332799?text=Quisiera%20el%20libro',
+  amazon: 'https://www.amazon.com/Heridas-que-convirtieron-alas-transformaci%C3%B3n-ebook/dp/B0HH7QXWYY',
+};
+
 export const IMAGES = {
   heroBook: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDKVI3tO8VSPSCvuBkml6MmYREbdJsXDPM2XkU7agX7nlR7gijcIzVb_GkPqXAt4cP-Oh6jQy-yVpxxfTWpHYuVUGJPYpVmqHfA8vmt87haL33sk3McvRE0jSUbUFiPnhDGM8YUDahM9lP69AyDtKdFAAVhpgAh9g6_qfQyAkFABW_pfGhJg2AaG11uuoVS7d1Lg3Ve2B--3Kq6tIAuLxtwbLuXadeCAnGbWsJu0fgZlvIfR6LGliot',
   deskBook: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBfUyYeC6qXj0aA3NOCbx1YwY5CGnlCOkAawR8NIuagQEknp2Nm9GAVTO-tt4LaZFmUrMkZl2eQsAqg7vb9dXVOUu-NPlDjCZoWCcFoqbGSFQ4LClKJceYiFvQk3udqUyNkK9W9meFcLqQCKKykRBpHbvWRniPvMDQt_soUpEoP3uqMRZOOWUddygHxsWL-Aaf4VxL3rbAOUksp_haTqfiFbmARPsgmZaEG6qhtNdW58XIHoVe65S5x',
@@ -27,8 +32,8 @@ export const EDITIONS: BookEdition[] = [
     id: 'print',
     name: 'Edición Impresa',
     subtitle: 'Libro físico con encuadernación premium',
-    price: '$19.99 USD',
-    originalPrice: '$25.99 USD',
+    price: 'S/ 65',
+    originalPrice: 'S/ 75',
     badge: 'Más Vendido',
     popular: true,
     description: 'Edición en tapa blanda con acabado mate aterciopelado, papel libre de ácido de alto gramaje y marcapáginas exclusivo de regalo.',

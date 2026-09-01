@@ -1,5 +1,5 @@
 import React from 'react';
-import { EDITIONS } from '../data/bookData';
+import { EDITIONS, LINKS } from '../data/bookData';
 import { Check, Zap, Book } from 'lucide-react';
 
 interface EditionsSectionProps {
@@ -89,16 +89,18 @@ export const EditionsSection: React.FC<EditionsSectionProps> = () => {
                 </ul>
               </div>
 
-              <button
-                type="button"
-                className={`w-full py-4 rounded-full font-bold text-base transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer ${
+              <a
+                href={isPrint ? LINKS.whatsapp : LINKS.amazon}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full py-4 rounded-full font-bold text-base transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer text-center block ${
                   isPrint
                     ? 'bg-[#FA505A] hover:bg-[#d73644] text-white shadow-md shadow-[#FA505A]/20'
                     : 'bg-[#F7F0F2] hover:bg-[#ECE5F9] text-[#1a1c1c] border border-[#ECE5F9]'
                 }`}
               >
                 {edition.ctaText}
-              </button>
+              </a>
             </div>
           );
         })}

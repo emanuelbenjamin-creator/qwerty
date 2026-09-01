@@ -1,5 +1,5 @@
 import React from 'react';
-import { IMAGES } from '../data/bookData';
+import { IMAGES, LINKS } from '../data/bookData';
 import { Sparkles, ShoppingBag } from 'lucide-react';
 
 interface FinalCtaSectionProps {
@@ -29,14 +29,16 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenPurchase
       </p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <button
+        <a
           id="final-cta-buy-btn"
-          onClick={onOpenPurchase}
+          href={LINKS.amazon}
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#FA505A] hover:bg-[#d73644] text-white font-bold px-10 sm:px-12 py-4 sm:py-5 rounded-full text-lg sm:text-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-xl shadow-[#FA505A]/25 flex items-center gap-3 cursor-pointer"
         >
           <ShoppingBag className="w-6 h-6" />
           <span>Comprar el Libro Ahora</span>
-        </button>
+        </a>
       </div>
 
       <p className="mt-6 text-sm text-[#5a4040] font-medium flex items-center justify-center gap-2">
